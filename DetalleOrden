@@ -1,0 +1,11 @@
+public class DetalleOrden {
+    private double precioUnitario;
+    private double cantidad;
+    private Producto producto; 
+
+    public double calcularSubtotal() { 
+        return cantidad * precioUnitario;
+    }
+    public String obtenerDetalle() { return ""; }
+    public DetalleOrden ver() { return this; }
+}
