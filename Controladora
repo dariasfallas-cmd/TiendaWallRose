@@ -1,0 +1,31 @@
+public class Controladora {
+    // Implementación Singleton
+    private static Controladora instancia;
+    
+    private Controladora() {} 
+
+    public static Controladora getInstancia() {
+        if (instancia == null) {
+            instancia = new Controladora();
+        }
+        return instancia;
+    }
+
+    
+    public void registrarCliente(String nombre, String email, String direccion) { /* ... */ }
+    public void actualizarDatosCliente(int idCliente, Object nuevosDatos) { /* ... */ }
+    public void darDeBajaCliente(int idCliente) { /* ... */ }
+    public Cliente buscarClientePorId(int idCliente) { return null; }
+    public List<Cliente> obtenerListaClientes() { return null; }
+
+    public void ingresarNuevoProducto(String nombre, double precio, double stock) { /* ... */ }
+    public void verificarDisponibilidad(int idProducto, double cantidadRequerida) { /* ... */ }
+    public void ajustarStock(int idProducto, double cantidad) { /* ... */ }
+
+    public void iniciarNuevaOrden(int idCliente) { /* ... */ }
+    public void agregarProductoOrden(int idOrden, int idProducto, double cantidad) { /* ... */ }
+    public void finalizarVenta(int idOrden) { /* ... */ }
+    
+    public List<OrdenCompra> consultaHistorialCliente(int idCliente) { return null; }
+    public List<Producto> obtenerProductosDisponibles(double stock) { return null; }
+}
