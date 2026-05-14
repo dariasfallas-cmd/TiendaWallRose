@@ -3,8 +3,10 @@ public class Cliente {
     private String nombre;
     private String email;
 
-    // lógica
-    public void crear() { /* Lógica para persistir */ }
-    public Cliente ver() { return this; }
-    // 
+// Métodos
+    public void crear(Cliente datos) { /* ... */ }
+    public void editar(int id, Cliente datos) { /* ... */ }
+    public Cliente ver(int id) { return this; }
+    public void borrar(int id) { /* ... */ }
+    public List<Cliente> listar() { return null; }
 }
