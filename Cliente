@@ -1,0 +1,10 @@
+public class Cliente {
+    private int idCliente;
+    private String nombre;
+    private String email;
+
+    // Métodos CRUD de lógica
+    public void crear() { /* Lógica para persistir */ }
+    public Cliente ver() { return this; }
+    // ... otros métodos
+}
