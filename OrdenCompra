@@ -1,0 +1,12 @@
+public class OrdenCompra {
+    private int idOrden;
+    private java.util.Date fecha;
+    private int total;
+    private String estado;
+    private int consecutivo;
+    private List<DetalleOrden> líneas;
+
+    public void crear(int idCliente, List<DetalleOrden> items) { /* ... */ }
+    public List<OrdenCompra> listar() { return null; }
+    public List<OrdenCompra> listarPorCliente(int idCliente) { return null; }
+}
