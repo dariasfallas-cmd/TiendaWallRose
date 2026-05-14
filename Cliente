@@ -3,8 +3,8 @@ public class Cliente {
     private String nombre;
     private String email;
 
-    // Métodos CRUD de lógica
+    // lógica
     public void crear() { /* Lógica para persistir */ }
     public Cliente ver() { return this; }
-    // ... otros métodos
+    // 
 }
